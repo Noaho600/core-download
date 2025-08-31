@@ -3,149 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Core Browser – Fast. Secure. Yours.</title>
+  <title>Core Browser</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; color: #202124; }
-    header { background: #4285f4; padding: 20px; text-align: center; color: white; }
-    header h1 { margin: 0; font-size: 36px; }
-    
-    .hero {
-      background: linear-gradient(135deg, #4285f4, #3367d6);
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-    }
-    .hero h2 { font-size: 48px; margin-bottom: 20px; }
-    .hero p { font-size: 18px; margin-bottom: 40px; }
-    .btn { padding: 14px 28px; background: white; color: #4285f4; border-radius: 4px; text-decoration: none; font-size: 18px; }
-    .btn:hover { background: #f8f9fa; }
-
-    .features {
-      padding: 60px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-    }
-    .feature-item {
-      max-width: 240px;
-      text-align: center;
-    }
-    .feature-item h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
       color: #202124;
     }
-    .feature-item p {
-      font-size: 16px;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      font-weight: normal;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
       color: #5f6368;
+      font-size: 15px;
     }
 
-    .screenshots {
-      background: #f2f2f2;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .screenshots img {
-      width: 260px;
-      margin: 10px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    nav a:hover {
+      color: #202124;
     }
 
-    .community-about {
-      padding: 60px 20px;
-      text-align: center;
+    .btn-top {
+      background: #1a73e8;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
     }
-    .community-about h2 { font-size: 32px; margin-bottom: 20px; }
-    .community-about p {
+
+    .btn-top:hover {
+      background: #1558b0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 60px;
+    }
+
+    .hero img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #202124;
+    }
+
+    .btn-main {
+      display: inline-block;
+      background: #1a73e8;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 4px;
       font-size: 18px;
-      margin-bottom: 30px;
-      color: #5f6368;
-    }
-    .community-about .btn {
-      margin: 0 10px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-weight: bold;
     }
 
-    footer {
-      background: #fafafa;
-      padding: 40px 20px;
-      text-align: center;
+    .btn-main:hover {
+      background: #1558b0;
+    }
+
+    .update-link {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .update-link:hover {
+      text-decoration: underline;
+    }
+
+    .platform {
+      margin-top: 15px;
       font-size: 14px;
       color: #5f6368;
     }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 13px;
+      color: #5f6368;
+      border-top: 1px solid #e0e0e0;
+      margin-top: 80px;
+    }
+
     footer a {
       color: #5f6368;
-      margin: 0 15px;
+      margin: 0 10px;
       text-decoration: none;
     }
-    footer a:hover { text-decoration: underline; }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Core Browser</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Support</a>
+  </nav>
+  <a href="#download" class="btn-top">Download Core</a>
 </header>
 
-<section class="hero">
-  <h2>Fast. Secure. Yours.</h2>
-  <p>The clean browser for a seamless web experience—nothing more, nothing less.</p>
-  <a href="#download" class="btn">Get Core Browser</a>
-</section>
-
-<section id="download" class="features">
-  <div class="feature-item">
-    <h3>Windows</h3>
-    <a href="#" class="btn">Download</a>
-  </div>
-  <div class="feature-item">
-    <h3>macOS</h3>
-    <a href="#" class="btn">Download</a>
-  </div>
-  <div class="feature-item">
-    <h3>Linux</h3>
-    <a href="#" class="btn">Download</a>
-  </div>
-</section>
-
-<section class="features">
-  <div class="feature-item">
-    <h3>Fast Performance</h3>
-    <p>Optimized for speed so you can surf the web effortlessly.</p>
-  </div>
-  <div class="feature-item">
-    <h3>Privacy First</h3>
-    <p>Designed with privacy and security as priorities.</p>
-  </div>
-  <div class="feature-item">
-    <h3>Minimal Design</h3>
-    <p>A clean and intuitive interface you’ll love to browse with.</p>
-  </div>
-</section>
-
-<section class="screenshots">
-  <h2>Preview It in Action</h2>
-  <img src="https://via.placeholder.com/260x160?text=Coming+Soon" alt="Screenshot 1">
-  <img src="https://via.placeholder.com/260x160?text=Coming+Soon" alt="Screenshot 2">
-</section>
-
-<section class="community-about">
-  <h2>Join the Community</h2>
-  <p>Connect, contribute, and help shape Core Browser's journey forward.</p>
-  <a href="#" class="btn">Join Discord</a>
-  <a href="#" class="btn">GitHub</a>
-</section>
-
-<section class="community-about">
-  <h2>About Core Browser</h2>
-  <p>Simplified browsing, reimagined. Developed with focus on speed, safety, and user-first design.</p>
+<section class="hero" id="download">
+  <img src="https://via.placeholder.com/100?text=Core+Logo" alt="Core Browser Logo">
+  <h2>The browser built for simplicity</h2>
+  <a href="#" class="btn-main">Download Core</a>
+  <a href="#" class="update-link">I want to update Core</a>
+  <p class="platform">For Windows 10/11 · macOS · Linux</p>
 </section>
 
 <footer>
   <p>&copy; 2025 Core Browser</p>
   <nav>
-    <a href="#">Terms</a> • <a href="#">Privacy</a> • <a href="#">Help</a>
+    <a href="#">Terms</a> • 
+    <a href="#">Privacy</a> • 
+    <a href="#">Help</a>
   </nav>
 </footer>
 
