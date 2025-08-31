@@ -3,145 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Core Browser</title>
+  <title>Download Core Browser</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #282843);
-      color: white;
-      text-align: center;
       margin: 0;
-      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
 
     header {
-      position: fixed;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
       top: 0;
-      width: 100%;
-      background: rgba(20, 20, 30, 0.9);
-      padding: 15px 0;
       z-index: 1000;
     }
 
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      color: #1a1a1a;
+    }
+
     header nav a {
-      margin: 0 20px;
-      color: #00bfff;
+      margin: 0 15px;
       text-decoration: none;
-      font-size: 18px;
+      color: #555;
+      font-size: 16px;
     }
 
     header nav a:hover {
-      text-decoration: underline;
+      color: #000;
     }
 
-    section {
-      padding: 120px 20px;
-      max-width: 900px;
-      margin: auto;
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
     }
 
-    h1 {
+    .hero h2 {
       font-size: 48px;
       margin-bottom: 20px;
+      color: #202124;
     }
 
-    h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    p {
+    .hero p {
       font-size: 18px;
-      color: #ddd;
+      color: #5f6368;
+      margin-bottom: 40px;
+    }
+
+    .download-card {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
     }
 
     .btn {
       display: inline-block;
+      padding: 14px 28px;
       margin: 15px;
-      padding: 12px 28px;
-      background: #00bfff;
+      background: #1a73e8;
       color: white;
-      border-radius: 24px;
       text-decoration: none;
+      border-radius: 8px;
       font-size: 18px;
       transition: background 0.3s;
     }
 
     .btn:hover {
-      background: #008fcc;
+      background: #1558b0;
+    }
+
+    .screenshots {
+      text-align: center;
+      margin: 80px auto;
     }
 
     .screenshots img {
-      width: 250px;
-      margin: 10px;
+      width: 300px;
+      margin: 15px;
       border-radius: 12px;
-      background: #333;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     footer {
-      background: rgba(10, 10, 20, 0.9);
+      background: #f1f3f4;
+      text-align: center;
       padding: 20px;
-      margin-top: 50px;
+      margin-top: 60px;
       font-size: 14px;
-      color: #aaa;
+      color: #5f6368;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <h1>Core Browser</h1>
   <nav>
-    <a href="#home">Home</a>
     <a href="#download">Download</a>
     <a href="#community">Community</a>
     <a href="#about">About</a>
   </nav>
 </header>
 
-<section id="home">
-  <h1>Core Browser</h1>
-  <p>Fast. Secure. Minimal. Your new browser experience starts here.</p>
-  <a href="#download" class="btn">Download Now</a>
-</section>
-
-<section id="features">
-  <h2>Features</h2>
-  <p>• Fast browsing</p>
-  <p>• Secure & private</p>
-  <p>• Easy to use</p>
-</section>
-
-<section id="screenshots">
-  <h2>Screenshots</h2>
-  <div class="screenshots">
-    <img src="https://via.placeholder.com/250x150?text=Coming+Soon" alt="Screenshot 1">
-    <img src="https://via.placeholder.com/250x150?text=Coming+Soon" alt="Screenshot 2">
-    <img src="https://via.placeholder.com/250x150?text=Coming+Soon" alt="Screenshot 3">
-  </div>
+<section class="hero">
+  <h2>Fast. Secure. Minimal.</h2>
+  <p>The new browser experience, nothing more, nothing less.</p>
 </section>
 
 <section id="download">
-  <h2>Download Core Browser</h2>
-  <a href="#" class="btn">Windows</a>
-  <a href="#" class="btn">macOS</a>
-  <a href="#" class="btn">Linux</a>
+  <div class="download-card">
+    <h2>Download Core Browser</h2>
+    <p>Select your platform:</p>
+    <a href="#" class="btn">Windows</a>
+    <a href="#" class="btn">macOS</a>
+    <a href="#" class="btn">Linux</a>
+  </div>
 </section>
 
-<section id="community">
-  <h2>Community</h2>
-  <p>Join the Core Browser community and help shape the future.</p>
+<section class="screenshots">
+  <h2>See Core Browser in Action</h2>
+  <img src="https://via.placeholder.com/300x200?text=Screenshot+1" alt="Screenshot 1">
+  <img src="https://via.placeholder.com/300x200?text=Screenshot+2" alt="Screenshot 2">
+</section>
+
+<section id="community" style="text-align:center; padding:80px 20px;">
+  <h2>Join the Community</h2>
+  <p>Help shape the future of Core Browser.</p>
   <a href="https://discord.gg/yourserver" class="btn">Join Discord</a>
   <a href="https://github.com/yourrepo" class="btn">GitHub</a>
-  <a href="https://reddit.com/r/yourreddit" class="btn">Reddit</a>
 </section>
 
-<section id="about">
+<section id="about" style="text-align:center; padding:80px 20px;">
   <h2>About Core Browser</h2>
-  <p>Core Browser is designed to be simple, secure, and fast — nothing more, nothing less.</p>
+  <p>Core Browser is built to be clean, secure, and fast — nothing more, nothing less.</p>
 </section>
 
 <footer>
-  <p>&copy; 2025 Core Browser | All Rights Reserved</p>
+  <p>&copy; 2025 Core Browser. All rights reserved.</p>
 </footer>
 
 </body>
